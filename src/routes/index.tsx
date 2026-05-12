@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({ component: Home });
 
 function Stat({ title, subtitle }: { title: string; subtitle: string }) {
   return (
-    <div className="p-8 flex flex-col gap-6 items-center justify-center bg-muted rounded-lg w-full h-full text-center">
+    <div className="p-6 flex flex-col gap-6 items-center justify-center bg-muted rounded-lg w-full h-full text-center">
       <span className="text-bold text-5xl">{title}</span>
       <p className="text-muted-foreground text-sm">{subtitle}</p>
     </div>
@@ -119,11 +119,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="py-30 max-w-[90%] mx-auto">
+      <section className="pt-30 max-w-[90%] mx-auto">
         <Quoted text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio commodi necessitatibus corrupti voluptatibus." />
       </section>
 
-      <section className="py-30 text-center p-6 flex items-center justify-center flex-col gap-8 max-w-3xl mx-auto">
+      <section className="pb-30 pt-40 text-center p-6 flex items-center justify-center flex-col gap-8 max-w-3xl mx-auto">
         <span className="text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quas
           enim aut reiciendis excepturi vitae!

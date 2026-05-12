@@ -17,10 +17,10 @@ function Home() {
 			id="stats"
 			className="h-screen p-4 flex flex-col gap-8 items-center justify-center"
 		>
-			<h1>[Title for Stats Section]</h1>
+			<h1 className="capitalize">Numbers that reflect the journey</h1>
 			<p className="max-w-sm md:max-w-lg text-center">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nam
-				illum cupiditate?
+				Years of hands-on experience, completed projects, and the people and
+				teams behind the work.
 			</p>
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center">
 				<HomeStats title="8+" subtitle="years of experience" />

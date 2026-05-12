@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ClassNameValue } from "tailwind-merge";
+import { Button } from "@/components/ui/button";
 import { Quoted } from "@/components/ui/quoted";
 import { cn } from "@/lib/utils";
 
@@ -120,6 +121,17 @@ function Home() {
 
       <section className="py-30 max-w-[90%] mx-auto">
         <Quoted text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio commodi necessitatibus corrupti voluptatibus." />
+      </section>
+
+      <section className="py-30 text-center p-6 flex items-center justify-center flex-col gap-8 max-w-3xl mx-auto">
+        <span className="text-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quas
+          enim aut reiciendis excepturi vitae!
+        </span>
+        <div className="flex gap-4 justify-center items-center w-fit mx-auto">
+          <Button className="capitalize">Send Me an email</Button>
+          <Button className="capitalize">Book A Meeting Now</Button>
+        </div>
       </section>
     </>
   );

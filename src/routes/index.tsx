@@ -6,9 +6,9 @@ export const Route = createFileRoute("/")({ component: Home });
 
 function Stat({ title, subtitle }: { title: string; subtitle: string }) {
 	return (
-		<div className="p-8 flex flex-col gap-6 items-center justify-center capitalize bg-accent rounded-lg">
+		<div className="p-8 flex flex-col gap-6 items-center justify-center capitalize bg-muted rounded-lg">
 			<h1 className="text-bold text-5xl">{title}</h1>
-			{subtitle}
+			<p className="text-muted-foreground">{subtitle}</p>
 		</div>
 	);
 }

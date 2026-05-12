@@ -33,14 +33,14 @@ function Capability({
         className,
       )}
     >
-      <div className="p-1 border rounded-xl w-[95%] md:w-[40%]">
+      <div className="p-1 border rounded-xl w-[95%] md:w-[60%] sm:w-[40%]">
         <img
           src={imageSource}
           className="rounded-md grayscale aspect-5/3 object-cover brightness-75"
           alt="pen-and-paper"
         />
       </div>
-      <div className="flex flex-col gap-4 w-[95%] md:w-[60%]">
+      <div className="flex flex-col gap-4 w-[95%] sm:w-[60%]">
         <h3>{title}</h3>
         <p className="text-muted-foreground">{description}</p>
       </div>
@@ -87,34 +87,34 @@ function Home() {
         </div>
         <div
           id="capabilities-showcase"
-          className="flex flex-col gap-24 justify-center max-w-2xl"
+          className="flex flex-col gap-18 lg:gap-30 justify-center max-w-2xl"
         >
           <Capability
             imageSource="/pen-and-paper.webp"
             title="Business Process Documentation"
-            description="Creating clear and comprehensive documentation of business processes to enhance understanding, communication, and efficiency within an organization."
+            description="Turning messy workflows into clear, usable documentation that helps teams work faster, reduce confusion, and stay aligned."
           />
           <Capability
             imageSource="/pen-and-paper.webp"
             title="HR Management"
-            description="Creating clear and comprehensive documentation of business processes to enhance understanding, communication, and efficiency within an organization."
+            description="Supporting people operations with structured HR processes, policy clarity, and practical systems that make teams run smoother."
             className="lg:flex-row-reverse"
           />
           <Capability
             imageSource="/pen-and-paper.webp"
             title="Organizational Structure Design"
-            description="Creating clear and comprehensive documentation of business processes to enhance understanding, communication, and efficiency within an organization."
+            description="Designing team structures and reporting lines that improve accountability, communication, and decision-making."
           />
           <Capability
             imageSource="/pen-and-paper.webp"
             title="Process & Operations Strategy"
-            description="Creating clear and comprehensive documentation of business processes to enhance understanding, communication, and efficiency within an organization."
+            description="Improving day-to-day operations through smarter workflows, better coordination, and systems built for consistency."
             className="lg:flex-row-reverse"
           />
           <Capability
             imageSource="/pen-and-paper.webp"
             title="Workflow & Compliance Management"
-            description="Creating clear and comprehensive documentation of business processes to enhance understanding, communication, and efficiency within an organization."
+            description="Creating compliant, easy-to-follow workflows that support control, reduce risk, and keep operations on track."
           />
         </div>
       </section>

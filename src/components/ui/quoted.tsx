@@ -12,7 +12,7 @@ export function Quoted({
   return (
     <div
       className={cn(
-        "relative mx-auto flex w-[min(40rem,90dvw)] flex-col justify-between gap-y-6 px-4 py-1 sm:py-8 text-center font-regular text-lg sm:text-3xl",
+        "relative mx-auto flex w-[min(40rem,90dvw)] flex-col justify-between gap-y-6 px-4 py-1 sm:py-8 text-center font-regular text-lg sm:text-2xl",
         className,
       )}
     >

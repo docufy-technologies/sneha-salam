@@ -22,7 +22,7 @@ function NavBar() {
 
   return (
     <ul
-      className="mx-auto flex w-fit rounded-full border-2 border-secondary bg-transparent backdrop-blur-xl z-100 fixed top-1 left-1/2 -translate-x-1/2 px-2 py-1 max-sm:p-1 gap-4 max-sm:gap-0"
+      className="mx-auto flex w-fit text-nowrap rounded-full border-2 border-secondary bg-transparent backdrop-blur-xl z-100 fixed top-1 left-1/2 -translate-x-1/2 px-2 py-1 max-sm:p-1 gap-4 max-sm:gap-0"
       onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
     >
       <NavTab setPosition={setPosition} to="/">
@@ -32,7 +32,7 @@ function NavBar() {
         About
       </NavTab>
       <NavTab setPosition={setPosition} to="/">
-        Book A Meeting
+        Contact Me
       </NavTab>
 
       <Cursor position={position} />
@@ -67,7 +67,7 @@ const NavTab = ({
           });
         }}
         className={cn(
-          "relative z-10 block cursor-pointer px-3 py-1.5 text-base! md:text-base rounded-full hover:bg-secondary",
+          "relative z-10 block cursor-pointer px-3 py-1.5 rounded-full hover:bg-secondary text-sm!",
           className,
         )}
       >

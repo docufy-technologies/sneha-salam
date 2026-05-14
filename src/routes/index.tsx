@@ -119,11 +119,14 @@ function Home() {
         </div>
       </section>
 
-      <section className="pt-30 max-w-[90%] mx-auto">
+      <section id="quote" className="pt-30 max-w-[90%] mx-auto">
         <Quoted text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio commodi necessitatibus corrupti voluptatibus." />
       </section>
 
-      <section className="pb-30 pt-40 text-center p-6 flex items-center justify-center flex-col gap-8 max-w-3xl mx-auto">
+      <section
+        id="bottom-cta"
+        className="pb-30 pt-40 text-center p-6 flex items-center justify-center flex-col gap-8 max-w-3xl mx-auto"
+      >
         <span className="text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quas
           enim aut reiciendis excepturi vitae!

@@ -27,11 +27,11 @@ function RouteComponent() {
       <section className="mt-40 mx-auto w-fit">
         <img
           src="/image-about.jpg"
-          className="size-60 rounded-full shadow-primary shadow-sm"
+          className="size-50 rounded-full shadow-primary shadow-sm"
           alt="Sneha Salam"
         />
       </section>
-      <section className="min-h-[20dvh] max-w-lg flex flex-col justify-center gap-4 pb-20 items-center text-center mx-auto p-4">
+      <section className="min-h-[20dvh] max-w-lg flex flex-col justify-center gap-2 pb-20 items-center text-center mx-auto p-4">
         <h1>I am Sneha Salam</h1>
         <p>Your Human Resources expert and Business Process specialist</p>
       </section>
@@ -40,10 +40,12 @@ function RouteComponent() {
         <div className="flex flex-col items-center justify-center sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
           <span className="font-bold h-full sm:mt-1 text-center">Who I am</span>
           <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolorem
-            eveniet maxime adipisci enim quia, porro similique numquam nesciunt
-            a aspernatur aliquam ratione iure, veritatis minus. Ex, deleniti.
-            Hic, neque!
+            I am Sneha Salam, a business operations and communication
+            professional with experience in corporate operations, documentation,
+            client management, public relations, and team leadership. I bring a
+            strong understanding of business functions, including HR, finance,
+            operations, and stakeholder coordination, with a focus on organized
+            execution and professional communication.
           </span>
         </div>
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
@@ -51,10 +53,12 @@ function RouteComponent() {
             What I Do
           </span>
           <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-            maxime minus fugit fugiat libero quisquam deserunt ab ipsam unde
-            architecto quis molestiae voluptatum obcaecati fuga, deleniti in
-            quos voluptas adipisci.
+            I work across operations, strategic planning, documentation, client
+            communication, and team management. My professional experience
+            includes leading corporate operations, managing documentation
+            workflows, coordinating with teams and stakeholders, supporting
+            digital and cross-functional projects, and building structured
+            systems for smooth business execution.
           </span>
         </div>
       </section>

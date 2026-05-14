@@ -1,8 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Quoted } from "@/components/ui/quoted";
 
 export const Route = createFileRoute("/about")({
   component: RouteComponent,
 });
+
+function Expertise({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="flex flex-col gap-4 p-12 justify-center items-center border h-full text-center">
+      <p className="font-semibold text-lg">{title}</p>
+      <p className="text-sm">{description}</p>
+    </div>
+  );
+}
 
 function RouteComponent() {
   return (
@@ -11,10 +27,10 @@ function RouteComponent() {
         <h1>
           I am <span className="text-primary">Sneha Salam</span>
         </h1>
-        <h5>Your Human Resources expert and Business Process specialist</h5>
+        <p>Your Human Resources expert and Business Process specialist</p>
       </section>
 
-      <section className="max-w-3xl sm:py-20 h-fit mx-auto flex flex-col gap-8 items-center justify-center">
+      <section className="max-w-3xl sm:py-10 h-fit mx-auto flex flex-col gap-8 items-center justify-center">
         <div className="flex flex-col items-center justify-center sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
           <span className="font-bold h-full sm:mt-1 text-center">Who I am</span>
           <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
@@ -35,6 +51,43 @@ function RouteComponent() {
             quos voluptas adipisci.
           </span>
         </div>
+      </section>
+
+      <section className="py-30 flex flex-col gap-12 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-4 text-center">
+          <h1>My Core Strengths</h1>
+          <p>These are the areas I excel in</p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 p-4">
+          <Expertise
+            title="Operations"
+            description="Managing tasks, workflow, coordination, and execution."
+          />
+          <Expertise
+            title="Communication"
+            description="Client handling, corporate dealing, public speaking, and interpersonal communication."
+          />
+          <Expertise
+            title="HR & Team Coordination"
+            description="Recruitment support, team management, and people-focused coordination."
+          />
+          <Expertise
+            title="Documentation"
+            description="Organizing information, preparing records, and maintaining structured work processes."
+          />
+          <Expertise
+            title="Strategic Planning"
+            description="Supporting planning, decision-making, and project execution."
+          />
+          <Expertise
+            title="PR & Events"
+            description="Public relations, event management, and organizational communication."
+          />
+        </div>
+      </section>
+
+      <section id="quote" className="pb-30 pt-10 max-w-[90%] mx-auto">
+        <Quoted text="I believe meaningful work starts with clear communication, strong organization, and the ability to work well with people." />
       </section>
     </>
   );

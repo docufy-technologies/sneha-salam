@@ -14,7 +14,7 @@ function Expertise({
   description: string;
 }) {
   return (
-    <div className="space-y-3 border bg-muted">
+    <div className="space-y-3 border-accent/20 border">
       <div className="flex items-center gap-2">
         <h3 className="text-base font-extrabold">{title}</h3>
       </div>
@@ -40,8 +40,10 @@ function RouteComponent() {
 
       <section className="max-w-3xl sm:pb-10 h-fit mx-auto flex flex-col gap-8 items-center justify-center">
         <div className="flex flex-col items-center justify-center sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
-          <span className="font-bold h-full sm:mt-1 text-center">Who I am</span>
-          <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
+          <span className="font-bold h-full sm:mt-1 text-center text-accent uppercase">
+            Who I am
+          </span>
+          <span className="max-sm:text-center col-span-2 font-light max-sm:px-6">
             I am Sneha Salam, a business operations and communications
             professional with experience in operations, documentation, client
             management, public relations, and team leadership. Skilled in HR,
@@ -50,10 +52,10 @@ function RouteComponent() {
           </span>
         </div>
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
-          <span className="font-bold h-full sm:mt-1 text-center">
+          <span className="font-bold h-full sm:mt-1 text-center text-accent uppercase">
             What I Do
           </span>
-          <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
+          <span className="max-sm:text-center col-span-2 font-light max-sm:px-6">
             I manage operations, strategic planning, documentation, client
             communication, and team coordination. My experience includes leading
             corporate operations, streamlining documentation workflows,
@@ -68,7 +70,7 @@ function RouteComponent() {
           <h1>My Core Strengths</h1>
           <p>These are the areas I excel in</p>
         </div>
-        <div className="relative gap-2 mx-auto grid max-w-2xl lg:max-w-4xl *:p-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="relative gap-2 mx-auto grid max-w-2xl lg:max-w-4xl *:p-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
           <Expertise
             title="Operations"
             description="Managing tasks, workflow, coordination, and execution."
@@ -100,8 +102,8 @@ function RouteComponent() {
         <Quoted text="I believe meaningful work starts with clear communication, strong organization, and the ability to work well with people." />
       </section>
 
-      <section className="pb-30 w-fit mx-auto">
-        <div className="flex gap-4 justify-start items-center max-sm:flex-col">
+      <section className="pb-30 max-w-[80%] mx-auto sm:w-fit">
+        <div className="flex gap-4 justify-start items-center max-sm:flex-col max-sm:w-full">
           <AnimatedButton variant="accent" className="max-sm:w-full">
             <a
               href="https://calendly.com/snehasalamhere/30min"

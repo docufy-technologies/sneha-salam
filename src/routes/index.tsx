@@ -9,9 +9,9 @@ export const Route = createFileRoute("/")({ component: Home });
 
 function Stat({ title, subtitle }: { title: string; subtitle: string }) {
   return (
-    <div className="p-6 flex flex-col gap-6 items-center justify-center bg-muted rounded-lg w-full h-full text-center">
+    <div className="p-6 flex flex-col gap-6 items-center justify-center bg-primary text-primary-foreground rounded-lg w-full h-full text-center">
       <span className="text-bold text-5xl">{title}</span>
-      <p className="text-muted-foreground text-sm">{subtitle}</p>
+      <p className="text-sm">{subtitle}</p>
     </div>
   );
 }
@@ -30,7 +30,7 @@ function Capability({
   return (
     <div
       className={cn(
-        "flex flex-col-reverse even:flex-row-reverse md:flex-row items-center justify-center gap-8 w-full",
+        "flex flex-col-reverse md:even:flex-row-reverse md:flex-row items-center justify-center gap-8 w-full",
         className,
       )}
     >
@@ -57,7 +57,7 @@ function Home() {
         className="p-4 h-[80dvh] max-sm:h-[70dvh] mt-30 max-w-6xl mx-auto"
       >
         <div className="relative flex items-end justify-end w-full h-full rounded-lg">
-          <div className="absolute h-full w-full top-0 left-0 bg-linear-to-r from-0% from-background via-50% via-background to-80% to-transparent rounded-md flex flex-col gap-8 p-12 justify-center">
+          <div className="absolute h-full w-full top-0 left-0 bg-linear-to-r from-0% from-background via-50% via-background to-80% to-transparent rounded-md flex flex-col gap-8 p-6 md:p-12 justify-center">
             <div className="flex flex-col gap-4">
               <span>Hello, I am</span>
               <h1 className="text-primary md:text-5xl">Sneha Salam</h1>
@@ -67,11 +67,7 @@ function Home() {
               Organizational Development.
             </span>
             <div className="flex gap-4 justify-start items-center max-sm:flex-col">
-              <AnimatedButton
-                size="lg"
-                variant="accent"
-                className="max-sm:w-full"
-              >
+              <AnimatedButton size="lg" className="max-sm:w-full">
                 <a
                   href="https://calendly.com/snehasalamhere/30min"
                   target="_blank"
@@ -174,7 +170,7 @@ function Home() {
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="capitalize">Organizations I have worked with</h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 p-4 gap-8 items-center justify-center py-20">
+        <div className="grid grid-cols-2 max-sm:w-[75%] mx-auto md:grid-cols-4 p-4 gap-12 items-center justify-center py-20">
           <div className="md:block hidden"></div>
           <div className="flex justify-center">
             <img
@@ -197,7 +193,7 @@ function Home() {
           <div className="flex justify-center">
             <img
               src="/nno.png"
-              className="h-8"
+              className="h-11"
               alt="National Newspaper Olympiad (NNO)"
             />
           </div>
@@ -210,14 +206,14 @@ function Home() {
           <div className="flex justify-center">
             <img
               src="/wdca.png"
-              className="h-8"
+              className="h-9"
               alt="Women’s Dreamer Cricket Academy"
             />
           </div>
           <div className="flex justify-center">
             <img
               src="/sohomormita-foundation.png"
-              className="h-8"
+              className="h-10"
               alt="Sohomormita Foundation"
             />
           </div>
@@ -231,7 +227,7 @@ function Home() {
           <div className="flex justify-center">
             <img
               src="/bured.png"
-              className="h-8"
+              className="h-12"
               alt="BRAC University Research for Development Club - ReD"
             />
           </div>
@@ -249,8 +245,8 @@ function Home() {
         <span className="text">
           Ready to discuss how I can help your organization?
         </span>
-        <div className="flex max-sm:flex-col gap-4 justify-center items-center w-fit mx-auto">
-          <AnimatedButton size="lg" variant="accent" className="max-sm:w-full">
+        <div className="flex max-sm:flex-col gap-4 justify-center items-center w-fit max-sm:w-[80%] mx-auto">
+          <AnimatedButton className="max-sm:w-full">
             <a
               href="https://calendly.com/snehasalamhere/30min"
               target="_blank"
@@ -260,7 +256,7 @@ function Home() {
               Book A Meeting Now
             </a>
           </AnimatedButton>
-          <Button variant={"outline"} size={"lg"} className="max-sm:w-full">
+          <Button variant={"outline"} className="max-sm:w-full">
             <a
               href="mailto:sneha@snehasalam.com"
               target="_blank"

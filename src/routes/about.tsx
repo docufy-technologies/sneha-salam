@@ -28,7 +28,7 @@ function RouteComponent() {
     <>
       <section className="mt-40 mx-auto w-fit">
         <img
-          src="/image-about.jpg"
+          src="/image-about.webp"
           className="size-50 rounded-full shadow-primary shadow-sm"
           alt="Sneha Salam"
         />

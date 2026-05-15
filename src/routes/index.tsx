@@ -90,7 +90,7 @@ function Home() {
             </div>
           </div>
           <img
-            src="/dropped.png"
+            src="/dropped.webp"
             className="rounded-lg object-cover h-full w-[60%]"
             alt="Sneha Salam"
           />
@@ -136,27 +136,27 @@ function Home() {
           className="flex flex-col gap-18 lg:gap-30 justify-center max-w-2xl"
         >
           <Capability
-            imageSource="/bpo.png"
+            imageSource="/bpo.webp"
             title="Business Process Documentation"
             description="Turning messy workflows into clear, usable documentation that helps teams work faster, reduce confusion, and stay aligned."
           />
           <Capability
-            imageSource="/cv-review.png"
+            imageSource="/cv-review.webp"
             title="HR Management"
             description="Supporting people operations with structured HR processes, policy clarity, and practical systems that make teams run smoother."
           />
           <Capability
-            imageSource="/organogram.png"
+            imageSource="/organogram.webp"
             title="Organizational Structure Design"
             description="Designing team structures and reporting lines that improve accountability, communication, and decision-making."
           />
           <Capability
-            imageSource="/process.png"
+            imageSource="/process.webp"
             title="Process & Operations Strategy"
             description="Improving day-to-day operations through smarter workflows, better coordination, and systems built for consistency."
           />
           <Capability
-            imageSource="/compliance.png"
+            imageSource="/compliance.webp"
             title="Workflow & Compliance Management"
             description="Creating compliant, easy-to-follow workflows that support control, reduce risk, and keep operations on track."
           />
@@ -180,53 +180,53 @@ function Home() {
             />
           </div>
           <div className="flex justify-center">
-            <img src="/ucb.png" className="h-8" alt="United Commercial Bank" />
+            <img src="/ucb.webp" className="h-8" alt="United Commercial Bank" />
           </div>
           <div className="md:block hidden"></div>
           <div className="flex justify-center">
             <img
-              src="/sysonex.png"
+              src="/sysonex.webp"
               className="h-8"
               alt="Sysonex Development Limited"
             />
           </div>
           <div className="flex justify-center">
             <img
-              src="/nno.png"
+              src="/nno.webp"
               className="h-11"
               alt="National Newspaper Olympiad (NNO)"
             />
           </div>
           <div className="flex justify-center">
-            <img src="/media-probe.png" className="h-8" alt="Media Probe" />
+            <img src="/media-probe.webp" className="h-8" alt="Media Probe" />
           </div>
           <div className="flex justify-center">
-            <img src="/peora.png" className="h-8" alt="Peora" />
+            <img src="/peora.webp" className="h-8" alt="Peora" />
           </div>
           <div className="flex justify-center">
             <img
-              src="/wdca.png"
+              src="/wdca.webp"
               className="h-9"
               alt="Women’s Dreamer Cricket Academy"
             />
           </div>
           <div className="flex justify-center">
             <img
-              src="/sohomormita-foundation.png"
+              src="/sohomormita-foundation.webp"
               className="h-10"
               alt="Sohomormita Foundation"
             />
           </div>
           <div className="flex justify-center">
             <img
-              src="/bizbee.png"
+              src="/bizbee.webp"
               className="h-8"
               alt="BRAC University Business Club - BIZZ BEE"
             />
           </div>
           <div className="flex justify-center">
             <img
-              src="/bured.png"
+              src="/bured.webp"
               className="h-12"
               alt="BRAC University Research for Development Club - ReD"
             />

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ClassNameValue } from "tailwind-merge";
+import AnimatedButton from "@/components/ui/animated-button";
 import { Button } from "@/components/ui/button";
 import { Quoted } from "@/components/ui/quoted";
 import { cn } from "@/lib/utils";
@@ -37,7 +38,7 @@ function Capability({
         <img
           src={imageSource}
           className="rounded-md aspect-5/3 object-cover brightness-75"
-          alt="pen-and-paper"
+          alt={title}
         />
       </div>
       <div className="flex flex-col gap-4 max-md:w-[80%] w-[60%]">
@@ -66,9 +67,29 @@ function Home() {
               Organizational Development.
             </span>
             <div className="flex gap-4 justify-start items-center max-sm:flex-col">
-              <Button className="max-sm:w-full">Book A Meeting With Me</Button>
-              <Button variant={"outline"} className="max-sm:w-full">
-                Send Me an Email
+              <AnimatedButton
+                size="lg"
+                variant="accent"
+                className="max-sm:w-full"
+              >
+                <a
+                  href="https://calendly.com/snehasalamhere/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex justify-center items-center"
+                >
+                  Meet Me Online
+                </a>
+              </AnimatedButton>
+              <Button variant={"outline"} size={"lg"} className="max-sm:w-full">
+                <a
+                  href="mailto:sneha@snehasalam.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex justify-center items-center"
+                >
+                  Send An Email
+                </a>
               </Button>
             </div>
           </div>
@@ -119,30 +140,101 @@ function Home() {
           className="flex flex-col gap-18 lg:gap-30 justify-center max-w-2xl"
         >
           <Capability
-            imageSource="/pen-and-paper.webp"
+            imageSource="/bpo.png"
             title="Business Process Documentation"
             description="Turning messy workflows into clear, usable documentation that helps teams work faster, reduce confusion, and stay aligned."
           />
           <Capability
-            imageSource="/pen-and-paper.webp"
+            imageSource="/cv-review.png"
             title="HR Management"
             description="Supporting people operations with structured HR processes, policy clarity, and practical systems that make teams run smoother."
           />
           <Capability
-            imageSource="/pen-and-paper.webp"
+            imageSource="/organogram.png"
             title="Organizational Structure Design"
             description="Designing team structures and reporting lines that improve accountability, communication, and decision-making."
           />
           <Capability
-            imageSource="/pen-and-paper.webp"
+            imageSource="/process.png"
             title="Process & Operations Strategy"
             description="Improving day-to-day operations through smarter workflows, better coordination, and systems built for consistency."
           />
           <Capability
-            imageSource="/pen-and-paper.webp"
+            imageSource="/compliance.png"
             title="Workflow & Compliance Management"
             description="Creating compliant, easy-to-follow workflows that support control, reduce risk, and keep operations on track."
           />
+        </div>
+      </section>
+
+      <section
+        id="organizations-worked-with"
+        className="max-w-3xl mx-auto pt-30"
+      >
+        <div className="flex flex-col justify-center items-center text-center">
+          <h1 className="capitalize">Organizations I have worked with</h1>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 p-4 gap-8 items-center justify-center py-20">
+          <div className="md:block hidden"></div>
+          <div className="flex justify-center">
+            <img
+              src="https://tech.docufybd.com/docufy-logo.png"
+              className="h-8"
+              alt="Docufy"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img src="/ucb.png" className="h-8" alt="United Commercial Bank" />
+          </div>
+          <div className="md:block hidden"></div>
+          <div className="flex justify-center">
+            <img
+              src="/sysonex.png"
+              className="h-8"
+              alt="Sysonex Development Limited"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/nno.png"
+              className="h-8"
+              alt="National Newspaper Olympiad (NNO)"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img src="/media-probe.png" className="h-8" alt="Media Probe" />
+          </div>
+          <div className="flex justify-center">
+            <img src="/peora.png" className="h-8" alt="Peora" />
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/wdca.png"
+              className="h-8"
+              alt="Women’s Dreamer Cricket Academy"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/sohomormita-foundation.png"
+              className="h-8"
+              alt="Sohomormita Foundation"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/bizbee.png"
+              className="h-8"
+              alt="BRAC University Business Club - BIZZ BEE"
+            />
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/bured.png"
+              className="h-8"
+              alt="BRAC University Research for Development Club - ReD"
+            />
+          </div>
         </div>
       </section>
 
@@ -157,9 +249,27 @@ function Home() {
         <span className="text">
           Ready to discuss how I can help your organization?
         </span>
-        <div className="flex gap-4 justify-center items-center w-fit mx-auto">
-          <Button className="capitalize">Send Me an email</Button>
-          <Button className="capitalize">Book A Meeting Now</Button>
+        <div className="flex max-sm:flex-col gap-4 justify-center items-center w-fit mx-auto">
+          <AnimatedButton size="lg" variant="accent" className="max-sm:w-full">
+            <a
+              href="https://calendly.com/snehasalamhere/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Book A Meeting Now
+            </a>
+          </AnimatedButton>
+          <Button variant={"outline"} size={"lg"} className="max-sm:w-full">
+            <a
+              href="mailto:sneha@snehasalam.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Send Me An Email
+            </a>
+          </Button>
         </div>
       </section>
     </>

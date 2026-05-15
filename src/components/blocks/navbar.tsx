@@ -83,7 +83,7 @@ const Cursor = ({ position }: { position: Position }) => {
   return (
     <motion.li
       animate={position}
-      className="absolute z-0 h-9 -translate-y-2 max-sm:-translate-y-2 rounded-full bg-secondary"
+      className="absolute z-0 h-8 rounded-full bg-secondary"
     />
   );
 };

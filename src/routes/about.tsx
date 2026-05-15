@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Button } from "@/components/ui/button";
+import AnimatedButton from "@/components/ui/animated-button";
 import { Quoted } from "@/components/ui/quoted";
 
 export const Route = createFileRoute("/about")({
@@ -19,14 +19,6 @@ function Expertise({
         <h3 className="text-base font-extrabold">{title}</h3>
       </div>
       <p className="text-sm">{description}</p>
-    </div>
-  );
-}
-
-function Organization({ imgSrc, title }: { imgSrc: string; title: string }) {
-  return (
-    <div className="p-4 flex items-center justify-center">
-      <img src={imgSrc} className="h-16 w-fit" alt={title} />
     </div>
   );
 }
@@ -104,40 +96,32 @@ function RouteComponent() {
         </div>
       </section>
 
-      <section className="py-30 flex flex-col gap-12 max-w-4xl mx-auto">
-        <h1 className="text-center">
-          Some of The Organizations I Have worked With
-        </h1>
-        <div className="grid grid-cols-4 items-center justify-center">
-          <Organization
-            title="Docufy"
-            imgSrc="https://docufybd.com/logo-dynamic.svg"
-          />
-          <Organization
-            title="Docufy"
-            imgSrc="https://docufybd.com/logo-dynamic.svg"
-          />
-          <Organization
-            title="Docufy"
-            imgSrc="https://docufybd.com/logo-dynamic.svg"
-          />
-          <Organization
-            title="Docufy"
-            imgSrc="https://docufybd.com/logo-dynamic.svg"
-          />
-        </div>
-      </section>
-
       <section id="quote" className="pb-30 pt-10 max-w-[90%] mx-auto">
         <Quoted text="I believe meaningful work starts with clear communication, strong organization, and the ability to work well with people." />
       </section>
 
       <section className="pb-30 w-fit mx-auto">
         <div className="flex gap-4 justify-start items-center max-sm:flex-col">
-          <Button className="max-sm:w-full">Book A Meeting With Me</Button>
-          <Button variant={"outline"} className="max-sm:w-full">
-            Send Me an Email
-          </Button>
+          <AnimatedButton variant="accent" className="max-sm:w-full">
+            <a
+              href="https://calendly.com/snehasalamhere/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Book A Call Now
+            </a>
+          </AnimatedButton>
+          <AnimatedButton variant={"outline"} className="max-sm:w-full">
+            <a
+              href="mailto:sneha@snehasalam.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Send Me An Email
+            </a>
+          </AnimatedButton>
         </div>
       </section>
     </>

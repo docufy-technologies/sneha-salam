@@ -14,9 +14,19 @@ function Expertise({
   description: string;
 }) {
   return (
-    <div className="flex flex-col gap-4 p-12 justify-center items-center border h-full text-center">
-      <p className="font-semibold text-lg">{title}</p>
+    <div className="space-y-3 border bg-muted">
+      <div className="flex items-center gap-2">
+        <h3 className="text-base font-extrabold">{title}</h3>
+      </div>
       <p className="text-sm">{description}</p>
+    </div>
+  );
+}
+
+function Organization({ imgSrc, title }: { imgSrc: string; title: string }) {
+  return (
+    <div className="p-4 flex items-center justify-center">
+      <img src={imgSrc} className="h-16 w-fit" alt={title} />
     </div>
   );
 }
@@ -40,12 +50,11 @@ function RouteComponent() {
         <div className="flex flex-col items-center justify-center sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
           <span className="font-bold h-full sm:mt-1 text-center">Who I am</span>
           <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
-            I am Sneha Salam, a business operations and communication
-            professional with experience in corporate operations, documentation,
-            client management, public relations, and team leadership. I bring a
-            strong understanding of business functions, including HR, finance,
-            operations, and stakeholder coordination, with a focus on organized
-            execution and professional communication.
+            I am Sneha Salam, a business operations and communications
+            professional with experience in operations, documentation, client
+            management, public relations, and team leadership. Skilled in HR,
+            finance, operations, and stakeholder coordination, I focus on
+            efficient execution and professional communication.
           </span>
         </div>
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4 w-full pt-10">
@@ -53,12 +62,11 @@ function RouteComponent() {
             What I Do
           </span>
           <span className="max-sm:text-center col-span-2 font-light max-sm:px-4">
-            I work across operations, strategic planning, documentation, client
-            communication, and team management. My professional experience
-            includes leading corporate operations, managing documentation
-            workflows, coordinating with teams and stakeholders, supporting
-            digital and cross-functional projects, and building structured
-            systems for smooth business execution.
+            I manage operations, strategic planning, documentation, client
+            communication, and team coordination. My experience includes leading
+            corporate operations, streamlining documentation workflows,
+            coordinating stakeholders, supporting cross-functional projects, and
+            developing structured systems for efficient business execution.
           </span>
         </div>
       </section>
@@ -68,7 +76,7 @@ function RouteComponent() {
           <h1>My Core Strengths</h1>
           <p>These are the areas I excel in</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 p-4">
+        <div className="relative gap-2 mx-auto grid max-w-2xl lg:max-w-4xl *:p-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
           <Expertise
             title="Operations"
             description="Managing tasks, workflow, coordination, and execution."
@@ -92,6 +100,30 @@ function RouteComponent() {
           <Expertise
             title="PR & Events"
             description="Public relations, event management, and organizational communication."
+          />
+        </div>
+      </section>
+
+      <section className="py-30 flex flex-col gap-12 max-w-4xl mx-auto">
+        <h1 className="text-center">
+          Some of The Organizations I Have worked With
+        </h1>
+        <div className="grid grid-cols-4 items-center justify-center">
+          <Organization
+            title="Docufy"
+            imgSrc="https://docufybd.com/logo-dynamic.svg"
+          />
+          <Organization
+            title="Docufy"
+            imgSrc="https://docufybd.com/logo-dynamic.svg"
+          />
+          <Organization
+            title="Docufy"
+            imgSrc="https://docufybd.com/logo-dynamic.svg"
+          />
+          <Organization
+            title="Docufy"
+            imgSrc="https://docufybd.com/logo-dynamic.svg"
           />
         </div>
       </section>

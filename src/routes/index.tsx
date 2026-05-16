@@ -104,7 +104,7 @@ function Home() {
         <h1 className="capitalize text-center">
           Numbers that reflect the journey
         </h1>
-        <p className="max-w-lg text-center">
+        <p className="max-w-lg text-center text-secondary">
           Years of hands-on experience, completed projects, and the teams behind
           the work.
         </p>

@@ -138,16 +138,16 @@ Best regards,
           Numbers that reflect the journey
         </h1>
         <p className="max-w-lg text-center text-secondary">
-          Years of hands-on experience, completed projects, and the teams behind
-          the work.
+          A track record shaped by organizational leadership, operations, and
+          strategic coordination.
         </p>
-        <div className="grid grid-cols-3 gap-4 justify-center items-center">
+        <div className="grid grid-cols-3 gap-4 max-w-2xl justify-center items-center">
           <Stat
             title={`${new Date().getFullYear() - 2018}+`}
-            subtitle="years of experience"
+            subtitle="Years in Leadership & Operations"
           />
-          <Stat title="17+" subtitle="projects completed" />
-          <Stat title="7+" subtitle="organizations" />
+          <Stat title="17+" subtitle="Organizational Projects" />
+          <Stat title="7+" subtitle="Teams & Organizations Supported" />
         </div>
       </section>
 
@@ -171,27 +171,27 @@ Best regards,
           <Capability
             imageSource="/bpo.webp"
             title="Business Process Documentation"
-            description="Turning messy workflows into clear, usable documentation that helps teams work faster, reduce confusion, and stay aligned."
+            description="Building structured documentation systems that improve clarity, accountability, and operational consistency."
           />
           <Capability
             imageSource="/cv-review.webp"
             title="HR Management"
-            description="Supporting people operations with structured HR processes, policy clarity, and practical systems that make teams run smoother."
+            description="Supporting people operations through structured HR coordination, policy alignment, and team support systems."
           />
           <Capability
             imageSource="/organogram.webp"
             title="Organizational Structure Design"
-            description="Designing team structures and reporting lines that improve accountability, communication, and decision-making."
+            description="Designing workflows and reporting structures that improve communication, accountability, and execution efficiency."
           />
           <Capability
             imageSource="/process.webp"
             title="Process & Operations Strategy"
-            description="Improving day-to-day operations through smarter workflows, better coordination, and systems built for consistency."
+            description="Streamlining operational workflows to support smoother coordination, decision-making, and daily execution."
           />
           <Capability
             imageSource="/compliance.webp"
             title="Workflow & Compliance Management"
-            description="Creating compliant, easy-to-follow workflows that support control, reduce risk, and keep operations on track."
+            description="Creating structured operational systems that reduce confusion, improve tracking, and maintain process consistency."
           />
         </div>
       </section>
@@ -268,7 +268,7 @@ Best regards,
       </section>
 
       <section id="quote" className="pt-30 max-w-[90%] mx-auto">
-        <Quoted text="I believe a good foundation in operations, HR, and organizational development is the key to any successful business." />
+        <Quoted text="Behind every successful organization is a system that keeps people, communication, and execution aligned." />
       </section>
 
       <section

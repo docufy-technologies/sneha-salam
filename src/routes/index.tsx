@@ -86,7 +86,7 @@ Best regards,
         className="p-4 h-[80dvh] max-sm:h-[70dvh] mt-30 max-w-6xl mx-auto"
       >
         <div className="relative flex items-end justify-end w-full h-full rounded-lg">
-          <div className="absolute h-full w-full top-0 left-0 bg-linear-to-r from-0% from-background via-50% via-background to-80% to-transparent rounded-md flex flex-col gap-8 p-6 md:p-12 justify-center">
+          <div className="absolute h-full w-full top-0 left-0 bg-linear-to-r from-0% from-background via-50% max-sm:via-35% via-background to-80% to-transparent rounded-md flex flex-col gap-8 p-6 md:p-12 justify-center">
             <div className="flex flex-col gap-4">
               <span>Hello, I am</span>
               <h1 className="text-primary md:text-5xl">Sneha Salam</h1>
@@ -106,7 +106,11 @@ Best regards,
                   Schedule A Consultation
                 </a>
               </AnimatedButton>
-              <Button variant={"outline"} size={"lg"} className="max-sm:w-full">
+              <Button
+                variant={"secondary"}
+                size={"lg"}
+                className="max-sm:w-full"
+              >
                 <a
                   href={`mailto:sneha@snehasalam.com?subject=${hireMeSubject}&body=${hireMeBody}`}
                   target="_blank"
@@ -119,8 +123,8 @@ Best regards,
             </div>
           </div>
           <img
-            src="/dropped.webp"
-            className="rounded-lg object-cover h-full w-[60%]"
+            src="/frontface.webp"
+            className="rounded-lg object-cover h-full w-[50%] max-sm:w-[70%]"
             alt="Sneha Salam"
           />
         </div>
@@ -285,7 +289,7 @@ Best regards,
               Let's Discuss
             </a>
           </AnimatedButton>
-          <Button variant={"outline"} className="max-sm:w-full">
+          <Button variant={"secondary"} className="max-sm:w-full">
             <a
               href="mailto:sneha@snehasalam.com"
               target="_blank"

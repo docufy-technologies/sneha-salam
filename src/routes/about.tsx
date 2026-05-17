@@ -27,11 +27,13 @@ function RouteComponent() {
   return (
     <>
       <section className="mt-40 mx-auto w-fit">
-        <img
-          src="/image-about.webp"
-          className="size-50 rounded-full shadow-primary shadow-sm"
-          alt="Sneha Salam"
-        />
+        <div className="flex items-center justify-center size-50 rounded-full overflow-hidden shadow-primary shadow-sm">
+          <img
+            src="/dropped.webp"
+            className="size-50 scale-150 translate-y-7 -translate-x-7"
+            alt="Sneha Salam"
+          />
+        </div>
       </section>
       <section className="min-h-[20dvh] max-w-lg flex flex-col justify-center gap-2 pb-20 items-center text-center mx-auto p-4">
         <h1>I am Sneha Salam</h1>

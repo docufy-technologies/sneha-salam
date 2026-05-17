@@ -50,6 +50,35 @@ function Capability({
 }
 
 function Home() {
+  const hireMeSubject = encodeURIComponent(
+    "Work Opportunity Inquiry from [Insert Business / Company Name]",
+  );
+
+  const hireMeBody = encodeURIComponent(`Hello Sneha Salam,
+
+I hope you are doing well.
+
+I would like to hire you for the following service(s):
+
+• Service Required: [HR / Finance / Administrative / Documentation / Legal Support / Other]
+• Project / Business Name: [Insert Name]
+• Scope of Work: [Describe Requirements]
+• Expected Deliverables: [Insert Details]
+• Deadline / Timeline: [Insert Timeline]
+• Budget Range: [Insert Budget]
+• Preferred Communication Method: [Email / WhatsApp / Zoom / Other]
+
+Additional Notes:
+[Insert Additional Information]
+
+Please let me know your availability and the next steps to proceed.
+
+Best regards,
+[Client Name]
+[Company / Organization]
+[Email Address]
+[Phone Number]`);
+
   return (
     <>
       <section
@@ -63,8 +92,8 @@ function Home() {
               <h1 className="text-primary md:text-5xl">Sneha Salam</h1>
             </div>
             <span className="text-xl max-w-2xl max-md:max-w-[75%] max-sm:max-w-full">
-              I am expert in Human Resource Management, Business operations, and
-              Organizational Development.
+              Helping teams and organizations operate with clarity, structure,
+              and efficient execution.
             </span>
             <div className="flex gap-4 justify-start items-center max-sm:flex-col">
               <AnimatedButton size="lg" className="max-sm:w-full">
@@ -74,17 +103,17 @@ function Home() {
                   rel="noopener noreferrer"
                   className="w-full h-full flex justify-center items-center"
                 >
-                  Meet Me Online
+                  Schedule A Consultation
                 </a>
               </AnimatedButton>
               <Button variant={"outline"} size={"lg"} className="max-sm:w-full">
                 <a
-                  href="mailto:sneha@snehasalam.com"
+                  href={`mailto:sneha@snehasalam.com?subject=${hireMeSubject}&body=${hireMeBody}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full h-full flex justify-center items-center"
                 >
-                  Send An Email
+                  Hire Me
                 </a>
               </Button>
             </div>
@@ -253,7 +282,7 @@ function Home() {
               rel="noopener noreferrer"
               className="w-full h-full flex justify-center items-center"
             >
-              Book A Meeting Now
+              Let's Discuss
             </a>
           </AnimatedButton>
           <Button variant={"outline"} className="max-sm:w-full">
@@ -263,7 +292,7 @@ function Home() {
               rel="noopener noreferrer"
               className="w-full h-full flex justify-center items-center"
             >
-              Send Me An Email
+              Contact Me
             </a>
           </Button>
         </div>

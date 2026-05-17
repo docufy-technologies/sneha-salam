@@ -34,7 +34,7 @@ const professionalExperience: ExperienceItem[] = [
     end: "Present",
   },
   {
-    organization: "United Commercial Bank",
+    organization: "United Commercial Bank PLC",
     title:
       "Intern, Project Management, Digital Technology & Innovation Division",
     description:
@@ -176,10 +176,10 @@ function ExperienceTimeline({ items }: { items: ExperienceItem[] }) {
             />
             <TimelineHeader className="space-y-1">
               <TimelineDate>{`${item.start} - ${item.end}`}</TimelineDate>
-              <TimelineTitle className="text-xl">
+              <TimelineTitle className="text-xl tracking-wide font-bold">
                 {item.organization}
               </TimelineTitle>
-              <p className="font-medium text-foreground/80">{item.title}</p>
+              <p className="font-medium text-accent">{item.title}</p>
             </TimelineHeader>
             <TimelineContent>{item.description}</TimelineContent>
           </TimelineItem>

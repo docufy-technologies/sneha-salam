@@ -74,27 +74,27 @@ function RouteComponent() {
         </div>
         <div className="relative gap-2 mx-auto grid max-w-2xl lg:max-w-4xl *:p-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
           <Expertise
-            title="Operations"
+            title="Operational Coordination"
             description="Managing tasks, workflow, coordination, and execution."
           />
           <Expertise
-            title="Communication"
+            title="Executive Communication"
             description="Client handling, corporate dealing, public speaking, and interpersonal communication."
           />
           <Expertise
-            title="HR & Team Coordination"
+            title="Stakeholder Management"
             description="Recruitment support, team management, and people-focused coordination."
           />
           <Expertise
-            title="Documentation"
+            title="Structured Documentation"
             description="Organizing information, preparing records, and maintaining structured work processes."
           />
           <Expertise
-            title="Strategic Planning"
+            title="Workflow Systems"
             description="Supporting planning, decision-making, and project execution."
           />
           <Expertise
-            title="PR & Events"
+            title="Cross-Functional Execution"
             description="Public relations, event management, and organizational communication."
           />
         </div>
